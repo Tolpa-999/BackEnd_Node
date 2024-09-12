@@ -40,7 +40,7 @@ const register = asyncWrapper(async (req, res, next) => {
         email,
         password: bcryotPass,
         role,
-        avatar: req.file.filename
+        // avatar: req.file.filename
     })
 
     const token = await generateJWT({ email: newUser.email, id: newUser._id, role: newUser.role })

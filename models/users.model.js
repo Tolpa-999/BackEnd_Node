@@ -28,10 +28,10 @@ const userSchema = new mongoose.Schema({
         enum: [userRules.USER, userRules.ADMIN, userRules.MANAGER],
         default: userRules.USER
     },
-    avatar: {
-        type: String,
-        default: 'uploads/avatar.png'
-    }
+    // avatar: {
+    //     type: String,
+    //     default: 'uploads/avatar.png'
+    // }
 
 
 })
